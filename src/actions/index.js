@@ -18,15 +18,18 @@ export const getStarWars = () => dispatch => {
     dispatch ({
         type: GET_SW_START
     });
+
     axios
-    .get ('https://swapi.co/api/people')
+    .get ('https://swapi.co/api/people/')
+    
     .then (res => {
         console.log(res)
         dispatch({
             type: GET_SW_SUCCESS,
-            payload: res.data
+            payload: res.data.results
         })
     })
+    
     .catch(err => {
         console.log(err)
         dispatch ({
