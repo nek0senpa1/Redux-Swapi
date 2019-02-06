@@ -24,13 +24,13 @@ export const charsReducer = (state = initialState, action) => {
     case GET_SW_SUCCESS:
       return {
         ...state,
-        isLoading: false,
+        isFetching: false,
         characters: action.payload
       };
     case GET_SW_FAIL:
       return {
         ...state,
-        isLoading: false,
+        isFetching: false,
         error: action.payload
       }
 
