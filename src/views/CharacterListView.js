@@ -25,7 +25,10 @@ class CharacterListView extends React.Component {
       <div>
         <div>
           {this.props.isFetching && (
+            <div>
             <h3>I'm Boba the Fett...ching</h3>
+            <img src="https://media.giphy.com/media/5UqL7oSxKwdwNhxo2C/giphy.gif" />
+            </div>
           )}
                   
         </div>
